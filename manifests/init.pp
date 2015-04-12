@@ -4,8 +4,6 @@ class winntp (
   $max_pos_phase_correction = '0xFFFFFFFF', # unlimited
   $max_neg_phase_correction = '0xFFFFFFFF') {
     
-  include 'registry'
-
   service { 'w32time':
     enable  => true,
     ensure  => 'running',
